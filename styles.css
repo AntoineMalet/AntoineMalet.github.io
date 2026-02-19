@@ -1,0 +1,31 @@
+/* css styles */
+.quarto-title-block .title {
+  text-align: center;
+  font-weight: 600;
+}
+
+.quarto-title-block .subtitle {
+  text-align: center;
+  font-weight: 400;
+  color: #666;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column; /* stack title and subtitle vertically */
+  justify-content: center; /* vertically center relative to image */
+}
+
+.profile-title {
+  font-size: 2em;        /* bigger font for the main title */
+  font-weight: bold;
+  margin: 0;             /* remove extra spacing */
+  color: #333;           /* optional color */
+}
+
+.profile-subtitle {
+  font-size: 1.2em;      /* smaller than title */
+  font-weight: normal;
+  margin: 0;             /* remove extra spacing */
+  color: #666;           /* optional color */
+}

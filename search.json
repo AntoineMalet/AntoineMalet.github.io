@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projets",
+    "section": "",
+    "text": "“Graph augmentation workflow”: Un workflow Snakemake pour l’augmentation de graphes de pangénomes (ajout de nouvelles données génomiques à un graphe de pangénome préexistant) à partir de short-reads assemblés.\n\n\n\nDéveloppé avec Snakemake.\nRepose principalement sur la suite d’outils vg (“variation graphs”). Les étapes spécifiques au fonctionnement de l’outils (formatage et filtrage des données) ont été implémentées en python.\nChaque étape est exécutée dans un conteneur adapté (Apptainer).\nCompatible avec les cluster de type SLURM.\nParamétrable depuis un fichier de configuration YAML (config.yaml).\n\n\n\n\nPython\nSnakemake\nApptainer\nGit\nCluster SLURM\n\n📄 Télécharger le poster en PDF"
+  },
+  {
+    "objectID": "projects.html#détails-dimplémentation",
+    "href": "projects.html#détails-dimplémentation",
+    "title": "Projets",
+    "section": "",
+    "text": "Développé avec Snakemake.\nRepose principalement sur la suite d’outils vg (“variation graphs”). Les étapes spécifiques au fonctionnement de l’outils (formatage et filtrage des données) ont été implémentées en python.\nChaque étape est exécutée dans un conteneur adapté (Apptainer).\nCompatible avec les cluster de type SLURM.\nParamétrable depuis un fichier de configuration YAML (config.yaml)."
+  },
+  {
+    "objectID": "projects.html#mots-clés-techniques",
+    "href": "projects.html#mots-clés-techniques",
+    "title": "Projets",
+    "section": "",
+    "text": "Python\nSnakemake\nApptainer\nGit\nCluster SLURM\n\n📄 Télécharger le poster en PDF"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Expériences et compétences",
+    "section": "",
+    "text": "Apprenti en bioinformatique – INRAE\n09.2024 – 01.2026\n\nPangénomique et graphes de pangénome\n\nDéveloppement pipeline Snakemake\n\nPython & tests unitaires\n\nConteneurisation (Apptainer)\n\nGit & reproductibilité\n\nSLURM (cluster de calcul)\n\nTraitement de données volumineuses\n\nOrganisme étudié : Zymoseptoria tritici\n\nPoster (M2) :\nGrAuFlow: A snakemake workflow for pangenome graph augmentation using short-read data\nJOBIM 2025 – hal-05209521\n\n\n\nStagiaire en bioinformatique – INRAE\n03.2024 – 07.2024\n\nR Markdown\n\nPython\n\nWeb-scraping\n\nText-mining\n\nAnalyse de sentiment\n\nBibliographie scientifique\n\nSujet : Lumbricus terrestris\n\n\n\n\nStagiaire en bioinformatique – INRAE\n09.2023 – 10.2023\n\nR (POO, Phyloseq)\n\nMétagénomique\n\nMicrobiote intestinal bovin\n\nAnalyse OTU\n\nDiversité α / β\n\nANOVA\n\nGalaxy MIGALE\n\n\n\n\nFormation\n\nMaster BIMS\nBioinformatique et Modélisation Statistique\nUniversité de Rouen Normandie\n2023 – 2026\n\nBioinformatique\n\nDéveloppement\n\nStatistiques\n\nSciences omiques\n\n\n\n\nLicence SVH\nUniversité Catholique de Lyon\n2020 – 2023\n\nBiologie animale & végétale\n\nImmunologie\n\nPhysiologie humaine\n\nÉpistémologie\n\nTravail en mode projet\n\n\n\n\n\nCompétences techniques\n\nDéveloppement\nPython, C, Bash, Web, Snakemake, Conda, Apptainer, Git, tests unitaires\n\n\nBioinformatique\nNGS, Génomique, GenomeBrowsers (NCBI, Ensembl, Uniprot), APIs, données OMICs\n\n\nMathématiques\nStatistiques descriptives et inférentielles, équations différentielles, R\n\n\nBases de données\nSQL, MongoDB, XML, ontologies\n\n\nBiologie\nGénétique, phylogénie, protéomique, PDB, AlphaFold, Chimera\n\n\n\n\nLangues\n\nFrançais (langue maternelle)\nAnglais (C1 – Linguaskill)\nEspagnol (B1)\n\n\n\n\nSoft Skills\n\nAdaptabilité\n\nCréativité\n\nCapacité d’apprentissage\n\nEsprit d’équipe\n\n\n\n\nCentres d’intérêt\n\nÉcriture (fantasy)\nLecture (fantasy)\nPeinture & modélisme"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Antoine Malet",
+    "section": "",
+    "text": "Antoine Malet\n    Ingénieur d'étude en bioinformatique\n  \n\n\n\nProfil\n\nFormation:\n2020-2023: Licence Science de la Vie et Humanités – Université Catholique de Lyon\n2023-2026: Master BIMS – Université de Rouen Normandie\nExpériences: IE junior après 17 mois d’alternance à l’INRAE. Expérience en NGS et génomique, développement et maintenance de workflows d’analyse (Python, Snakemake) sous Linux.\nPublications: Concepteur du workflow GrAuFlow pour l’augmentation de graphes pangénome à partir de short-reads assemblés. Poster présenté lors de l’évènement JOBIM 2025. Disponible à l’URL: https://hal.inrae.fr/BIOGECO/hal-05209521v1.\n\n\n\n\nCompétences clés\n\nPangénomique & graphes\nSnakemake / Python\nConteneurisation (Apptainer)\nReproductibilité & Git\nSLURM & calcul distribué\nStatistiques & modélisation\n\n\n\n\nContact\n\n📧 antoinelm.malet@gmail.com\n\n📱 +33 07 69 85 61 40\n\n📍 Versailles, France\n\n📄 Télécharger le CV en PDF"
+  }
+]
