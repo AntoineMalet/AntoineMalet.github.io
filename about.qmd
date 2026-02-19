@@ -1,0 +1,118 @@
+---
+title: "Expériences et compétences"
+format:
+  html:
+    toc: true
+---
+
+### Apprenti en bioinformatique – INRAE  
+**09.2024 – 01.2026**
+
+- Pangénomique et graphes de pangénome  
+- Développement pipeline Snakemake  
+- Python & tests unitaires  
+- Conteneurisation (Apptainer)  
+- Git & reproductibilité  
+- SLURM (cluster de calcul)  
+- Traitement de données volumineuses  
+- Organisme étudié : *Zymoseptoria tritici*  
+
+Poster (M2) :  
+*GrAuFlow: A snakemake workflow for pangenome graph augmentation using short-read data*  
+JOBIM 2025 – hal-05209521  
+
+---
+
+### Stagiaire en bioinformatique – INRAE  
+**03.2024 – 07.2024**
+
+- R Markdown  
+- Python  
+- Web-scraping  
+- Text-mining  
+- Analyse de sentiment  
+- Bibliographie scientifique  
+- Sujet : *Lumbricus terrestris*
+
+---
+
+### Stagiaire en bioinformatique – INRAE  
+**09.2023 – 10.2023**
+
+- R (POO, Phyloseq)  
+- Métagénomique  
+- Microbiote intestinal bovin  
+- Analyse OTU  
+- Diversité α / β  
+- ANOVA  
+- Galaxy MIGALE  
+
+---
+
+# Formation
+
+### Master BIMS  
+Bioinformatique et Modélisation Statistique  
+Université de Rouen Normandie  
+**2023 – 2026**
+
+- Bioinformatique  
+- Développement  
+- Statistiques  
+- Sciences omiques  
+
+---
+
+### Licence SVH  
+Université Catholique de Lyon  
+**2020 – 2023**
+
+- Biologie animale & végétale  
+- Immunologie  
+- Physiologie humaine  
+- Épistémologie  
+- Travail en mode projet  
+
+---
+
+# Compétences techniques
+
+### Développement
+Python, C, Bash, Web, Snakemake, Conda, Apptainer, Git, tests unitaires
+
+### Bioinformatique
+NGS, Génomique, GenomeBrowsers (NCBI, Ensembl, Uniprot), APIs, données OMICs
+
+### Mathématiques
+Statistiques descriptives et inférentielles, équations différentielles, R
+
+### Bases de données
+SQL, MongoDB, XML, ontologies
+
+### Biologie
+Génétique, phylogénie, protéomique, PDB, AlphaFold, Chimera
+
+---
+
+# Langues
+
+- Français (langue maternelle)
+- Anglais (C1 – Linguaskill)
+- Espagnol (B1)
+
+---
+
+# Soft Skills
+
+- Adaptabilité  
+- Créativité  
+- Capacité d'apprentissage  
+- Esprit d'équipe  
+
+---
+
+# Centres d’intérêt
+
+- Écriture (fantasy)
+- Lecture (fantasy)
+- Peinture & modélisme

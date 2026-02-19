@@ -1,0 +1,28 @@
+---
+title: "Projets"
+---
+
+# GrAuFlow
+
+**"Graph augmentation workflow"**: Un workflow Snakemake pour l'augmentation de graphes de pangénomes (ajout de nouvelles données génomiques à un graphe de pangénome préexistant) à partir de *short-reads* assemblés.
+
+## Détails d'implémentation
+
+- Développé avec Snakemake.
+- Repose principalement sur la suite d'outils *vg* ("variation graphs").
+Les étapes spécifiques au fonctionnement de l'outils (formatage et filtrage des données) ont été implémentées en python.
+- Chaque étape est exécutée dans un conteneur adapté (Apptainer).
+- Compatible avec les cluster de type SLURM.
+- Paramétrable depuis un fichier de configuration YAML (config.yaml).
+
+## Mots-clés techniques
+
+Python  
+Snakemake  
+Apptainer  
+Git  
+Cluster SLURM  
+
+---
+
+[📄 Télécharger le poster en PDF](JOBIM_2025_poster_grauflow.pdf)

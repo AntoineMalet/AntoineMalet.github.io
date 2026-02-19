@@ -1,0 +1,156 @@
+[
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projets",
+    "section": "",
+    "text": "“Graph augmentation workflow”: Un workflow Snakemake pour l’augmentation de graphes de pangénomes (ajout de nouvelles données génomiques à un graphe de pangénome préexistant) à partir de short-reads assemblés.\n\n\n\nDéveloppé avec Snakemake.\nRepose principalement sur la suite d’outils vg (“variation graphs”). Les étapes spécifiques au fonctionnement de l’outils (formatage et filtrage des données) ont été implémentées en python.\nChaque étape est exécutée dans un conteneur adapté (Apptainer).\nCompatible avec les cluster de type SLURM.\nParamétrable depuis un fichier de configuration YAML (config.yaml).\n\n\n\n\nPython\nSnakemake\nApptainer\nGit\nCluster SLURM\n\n📄 Télécharger le poster en PDF"
+  },
+  {
+    "objectID": "projects.html#features",
+    "href": "projects.html#features",
+    "title": "Projects",
+    "section": "",
+    "text": "Modular Snakemake architecture\nUnit-tested Python scripts\nApptainer containers\nSLURM compatibility\nReproducible pipeline design"
+  },
+  {
+    "objectID": "projects.html#technical-stack",
+    "href": "projects.html#technical-stack",
+    "title": "Projets",
+    "section": "",
+    "text": "Python\nSnakemake\nApptainer\nGit\nSLURM"
+  },
+  {
+    "objectID": "projects.html#graph-programming-in-c",
+    "href": "projects.html#graph-programming-in-c",
+    "title": "Projects",
+    "section": "Graph Programming in C",
+    "text": "Graph Programming in C\nCustom graph structures and algorithm implementation."
+  },
+  {
+    "objectID": "projects.html#statistical-modeling",
+    "href": "projects.html#statistical-modeling",
+    "title": "Projects",
+    "section": "Statistical Modeling",
+    "text": "Statistical Modeling\nImplementation of probabilistic models including HMMs in R."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Antoine Malet",
+    "section": "",
+    "text": "Antoine Malet\n    Ingénieur d'étude en bioinformatique\n  \n\n\n\nProfil\n\nFormation:\n2020-2023: Licence Science de la Vie et Humanités – Université Catholique de Lyon\n2023-2026: Master BIMS – Université de Rouen Normandie\nExpériences: IE junior après 17 mois d’alternance à l’INRAE. Expérience en NGS et génomique, développement et maintenance de workflows d’analyse (Python, Snakemake) sous Linux.\nPublications: Concepteur du workflow GrAuFlow pour l’augmentation de graphes pangénome à partir de short-reads assemblés. Poster présenté lors de l’évènement JOBIM 2025. Disponible à l’URL: https://hal.inrae.fr/BIOGECO/hal-05209521v1.\n\n\n\n\nCompétences clés\n\nPangénomique & graphes\nSnakemake / Python\nConteneurisation (Apptainer)\nReproductibilité & Git\nSLURM & calcul distribué\nStatistiques & modélisation\n\n\n\n\nContact\n\n📧 antoinelm.malet@gmail.com\n\n📱 +33 07 69 85 61 40\n\n📍 Versailles, France\n\n📄 Télécharger le CV en PDF"
+  },
+  {
+    "objectID": "index.html#profil",
+    "href": "index.html#profil",
+    "title": "Antoine Malet",
+    "section": "",
+    "text": "IE junior après 17 mois d’alternance à l’INRAE.\nExpérience en NGS et génomique, développement et maintenance de workflows d’analyse (Python, Snakemake) sous Linux.\nConcepteur du workflow GrAuFlow pour l’augmentation de graphes pangénome à partir de short-reads assemblés.\nPoster présenté à JOBIM 2025."
+  },
+  {
+    "objectID": "index.html#compétences-clés",
+    "href": "index.html#compétences-clés",
+    "title": "Antoine Malet",
+    "section": "",
+    "text": "Pangénomique & graphes\nSnakemake / Python\nConteneurisation (Apptainer)\nReproductibilité & Git\nSLURM & calcul distribué\nStatistiques & modélisation"
+  },
+  {
+    "objectID": "index.html#contact",
+    "href": "index.html#contact",
+    "title": "Antoine Malet",
+    "section": "",
+    "text": "📧 antoinelm.malet@gmail.com\n\n📱 +33 07 69 85 61 40\n\n📍 Versailles, France\n\n📄 Télécharger le CV en PDF"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Expériences et compétences",
+    "section": "",
+    "text": "Apprenti en bioinformatique – INRAE\n09.2024 – 01.2026\n\nPangénomique et graphes de pangénome\n\nDéveloppement pipeline Snakemake\n\nPython & tests unitaires\n\nConteneurisation (Apptainer)\n\nGit & reproductibilité\n\nSLURM (cluster de calcul)\n\nTraitement de données volumineuses\n\nOrganisme étudié : Zymoseptoria tritici\n\nPoster (M2) :\nGrAuFlow: A snakemake workflow for pangenome graph augmentation using short-read data\nJOBIM 2025 – hal-05209521\n\n\n\nStagiaire en bioinformatique – INRAE\n03.2024 – 07.2024\n\nR Markdown\n\nPython\n\nWeb-scraping\n\nText-mining\n\nAnalyse de sentiment\n\nBibliographie scientifique\n\nSujet : Lumbricus terrestris\n\n\n\n\nStagiaire en bioinformatique – INRAE\n09.2023 – 10.2023\n\nR (POO, Phyloseq)\n\nMétagénomique\n\nMicrobiote intestinal bovin\n\nAnalyse OTU\n\nDiversité α / β\n\nANOVA\n\nGalaxy MIGALE\n\n\n\n\nFormation\n\nMaster BIMS\nBioinformatique et Modélisation Statistique\nUniversité de Rouen Normandie\n2023 – 2026\n\nBioinformatique\n\nDéveloppement\n\nStatistiques\n\nSciences omiques\n\n\n\n\nLicence SVH\nUniversité Catholique de Lyon\n2020 – 2023\n\nBiologie animale & végétale\n\nImmunologie\n\nPhysiologie humaine\n\nÉpistémologie\n\nTravail en mode projet\n\n\n\n\n\nCompétences techniques\n\nDéveloppement\nPython, C, Bash, Web, Snakemake, Conda, Apptainer, Git, tests unitaires\n\n\nBioinformatique\nNGS, Génomique, GenomeBrowsers (NCBI, Ensembl, Uniprot), APIs, données OMICs\n\n\nMathématiques\nStatistiques descriptives et inférentielles, équations différentielles, R\n\n\nBases de données\nSQL, MongoDB, XML, ontologies\n\n\nBiologie\nGénétique, phylogénie, protéomique, PDB, AlphaFold, Chimera\n\n\n\n\nLangues\n\nFrançais (langue maternelle)\nAnglais (C1 – Linguaskill)\nEspagnol (B1)\n\n\n\n\nSoft Skills\n\nAdaptabilité\n\nCréativité\n\nCapacité d’apprentissage\n\nEsprit d’équipe\n\n\n\n\nCentres d’intérêt\n\nÉcriture (fantasy)\nLecture (fantasy)\nPeinture & modélisme"
+  },
+  {
+    "objectID": "about.html#apprenti-en-bioinformatique-inrae",
+    "href": "about.html#apprenti-en-bioinformatique-inrae",
+    "title": "Curriculum Vitae",
+    "section": "",
+    "text": "09.2024 – 01.2026\n\nPangénomique et graphes de pangénome\n\nDéveloppement pipeline Snakemake\n\nPython & tests unitaires\n\nConteneurisation (Apptainer)\n\nGit & reproductibilité\n\nSLURM (cluster de calcul)\n\nTraitement de données volumineuses\n\nOrganisme étudié : Zymoseptoria tritici\n\nPoster (M2) :\nGrAuFlow: A snakemake workflow for pangenome graph augmentation using short-read data\nJOBIM 2025 – hal-05209521"
+  },
+  {
+    "objectID": "about.html#stagiaire-en-bioinformatique-inrae",
+    "href": "about.html#stagiaire-en-bioinformatique-inrae",
+    "title": "Curriculum Vitae",
+    "section": "",
+    "text": "03.2024 – 07.2024\n\nR Markdown\n\nPython\n\nWeb-scraping\n\nText-mining\n\nAnalyse de sentiment\n\nBibliographie scientifique\n\nSujet : Lumbricus terrestris"
+  },
+  {
+    "objectID": "about.html#stagiaire-en-bioinformatique-inrae-1",
+    "href": "about.html#stagiaire-en-bioinformatique-inrae-1",
+    "title": "Curriculum Vitae",
+    "section": "",
+    "text": "09.2023 – 10.2023\n\nR (POO, Phyloseq)\n\nMétagénomique\n\nMicrobiote intestinal bovin\n\nAnalyse OTU\n\nDiversité α / β\n\nANOVA\n\nGalaxy MIGALE"
+  },
+  {
+    "objectID": "about.html#master-bims",
+    "href": "about.html#master-bims",
+    "title": "Curriculum Vitae",
+    "section": "Master BIMS",
+    "text": "Master BIMS\nBioinformatique et Modélisation Statistique\nUniversité de Rouen Normandie\n2023 – 2026\n\nBioinformatique\n\nDéveloppement\n\nStatistiques\n\nSciences omiques"
+  },
+  {
+    "objectID": "about.html#licence-svh",
+    "href": "about.html#licence-svh",
+    "title": "Curriculum Vitae",
+    "section": "Licence SVH",
+    "text": "Licence SVH\nUniversité Catholique de Lyon\n2020 – 2023\n\nBiologie animale & végétale\n\nImmunologie\n\nPhysiologie humaine\n\nÉpistémologie\n\nTravail en mode projet"
+  },
+  {
+    "objectID": "about.html#développement",
+    "href": "about.html#développement",
+    "title": "Curriculum Vitae",
+    "section": "Développement",
+    "text": "Développement\nPython, C, Bash, Web, Snakemake, Conda, Apptainer, Git, tests unitaires"
+  },
+  {
+    "objectID": "about.html#bioinformatique",
+    "href": "about.html#bioinformatique",
+    "title": "Curriculum Vitae",
+    "section": "Bioinformatique",
+    "text": "Bioinformatique\nNGS, Génomique, GenomeBrowsers (NCBI, Ensembl, Uniprot), APIs, données OMICs"
+  },
+  {
+    "objectID": "about.html#mathématiques",
+    "href": "about.html#mathématiques",
+    "title": "Curriculum Vitae",
+    "section": "Mathématiques",
+    "text": "Mathématiques\nStatistiques descriptives et inférentielles, équations différentielles, R"
+  },
+  {
+    "objectID": "about.html#bases-de-données",
+    "href": "about.html#bases-de-données",
+    "title": "Curriculum Vitae",
+    "section": "Bases de données",
+    "text": "Bases de données\nSQL, MongoDB, XML, ontologies"
+  },
+  {
+    "objectID": "about.html#biologie",
+    "href": "about.html#biologie",
+    "title": "Curriculum Vitae",
+    "section": "Biologie",
+    "text": "Biologie\nGénétique, phylogénie, protéomique, PDB, AlphaFold, Chimera"
+  },
+  {
+    "objectID": "projects.html#détails-dimplémentation",
+    "href": "projects.html#détails-dimplémentation",
+    "title": "Projets",
+    "section": "",
+    "text": "Développé avec Snakemake.\nRepose principalement sur la suite d’outils vg (“variation graphs”). Les étapes spécifiques au fonctionnement de l’outils (formatage et filtrage des données) ont été implémentées en python.\nChaque étape est exécutée dans un conteneur adapté (Apptainer).\nCompatible avec les cluster de type SLURM.\nParamétrable depuis un fichier de configuration YAML (config.yaml)."
+  },
+  {
+    "objectID": "projects.html#mots-clés-techniques",
+    "href": "projects.html#mots-clés-techniques",
+    "title": "Projets",
+    "section": "",
+    "text": "Python\nSnakemake\nApptainer\nGit\nCluster SLURM\n\n📄 Télécharger le poster en PDF"
+  }
+]
