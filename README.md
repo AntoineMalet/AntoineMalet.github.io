@@ -1,3 +1,7 @@
+## clone
+git clone git@github.com:AntoineMalet/AntoineMalet.github.io.git
+
+## publish
 git add .  
 git commit -m "your message"  
 git push  
