@@ -4,14 +4,14 @@
     "href": "projects.html",
     "title": "Projets",
     "section": "",
-    "text": "“Graph augmentation workflow”: Un workflow Snakemake pour l’augmentation de graphes de pangénomes (ajout de nouvelles données génomiques à un graphe de pangénome préexistant) à partir de short-reads assemblés.\n\n\n\nDéveloppé avec Snakemake.\nRepose principalement sur la suite d’outils vg (“variation graphs”). Les étapes spécifiques au fonctionnement de l’outils (formatage et filtrage des données) ont été implémentées en python.\nChaque étape est exécutée dans un conteneur adapté (Apptainer).\nCompatible avec les cluster de type SLURM.\nParamétrable depuis un fichier de configuration YAML (config.yaml).\n\n\n\n\nPython\nSnakemake\nApptainer\nGit\nCluster SLURM\n\n📄 Télécharger le poster en PDF"
+    "text": "“Graph augmentation workflow”: Un workflow Snakemake pour l’augmentation de graphes de pangénomes (ajout de nouvelles données génomiques à un graphe de pangénome préexistant) à partir de short-reads assemblés.\n\n\n\nDéveloppé avec Snakemake.\nRepose principalement sur la suite d’outils vg (“variation graphs”). Les étapes spécifiques au fonctionnement de l’outil (formatage et filtrage des données) ont été implémentées en python.\nChaque étape est exécutée dans un conteneur adapté (Apptainer).\nCompatible avec les clusters de type SLURM.\nParamétrable depuis un fichier de configuration YAML (config.yaml).\n\n\n\n\nPython\nSnakemake\nApptainer\nGit\nCluster SLURM\n\n📄 Télécharger le poster en PDF"
   },
   {
     "objectID": "projects.html#détails-dimplémentation",
     "href": "projects.html#détails-dimplémentation",
     "title": "Projets",
     "section": "",
-    "text": "Développé avec Snakemake.\nRepose principalement sur la suite d’outils vg (“variation graphs”). Les étapes spécifiques au fonctionnement de l’outils (formatage et filtrage des données) ont été implémentées en python.\nChaque étape est exécutée dans un conteneur adapté (Apptainer).\nCompatible avec les cluster de type SLURM.\nParamétrable depuis un fichier de configuration YAML (config.yaml)."
+    "text": "Développé avec Snakemake.\nRepose principalement sur la suite d’outils vg (“variation graphs”). Les étapes spécifiques au fonctionnement de l’outil (formatage et filtrage des données) ont été implémentées en python.\nChaque étape est exécutée dans un conteneur adapté (Apptainer).\nCompatible avec les clusters de type SLURM.\nParamétrable depuis un fichier de configuration YAML (config.yaml)."
   },
   {
     "objectID": "projects.html#mots-clés-techniques",
@@ -19,6 +19,27 @@
     "title": "Projets",
     "section": "",
     "text": "Python\nSnakemake\nApptainer\nGit\nCluster SLURM\n\n📄 Télécharger le poster en PDF"
+  },
+  {
+    "objectID": "projects.html#détails-dimplémentation-1",
+    "href": "projects.html#détails-dimplémentation-1",
+    "title": "Projets",
+    "section": "Détails d’implémentation",
+    "text": "Détails d’implémentation\n\nDéveloppé en TypeScript pour l’API de Foundry VTT.\nModélisation et automatisation de la résolution des affrontements simultanés (gestion de cibles multiples).\nCalcul dynamique des marges de réussite, échecs et égalités à partir des jetés de dés.\nGénération automatique et rendu HTML de rapports narratifs."
+  },
+  {
+    "objectID": "projects.html#extrait-de-code",
+    "href": "projects.html#extrait-de-code",
+    "title": "Projets",
+    "section": "Extrait de code",
+    "text": "Extrait de code\n\n\n💻 Dérouler pour voir la logique de résolution (TypeScript)\n\n/**\n * Stack technique : TypeScript, JavaScript, Foundry VTT API, HTML/CSS, Git\n */\n\ninterface Combatant {\n  id: string;\n  name: string;\n  successes: number;\n  actionType: 'Combat' | 'Defense' | 'Utility';\n}\n\ninterface ConfrontationOutcome {\n  targetName: string;\n  status: 'victory' | 'defeat' | 'tie';\n  margin: number;\n  message: string;\n}\n\nexport class CogentCombatResolver {\n  /**\n   * Calcule les résultats d'une confrontation entre un attaquant et ses cibles.\n   */\n  public static resolveConfrontation(actor: Combatant, targets: Combatant[]): ConfrontationOutcome[] {\n    return targets.map(target =&gt; {\n      const margin = actor.successes - target.successes;\n\n      if (margin &gt; 0) {\n        return {\n          targetName: target.name,\n          status: 'victory',\n          margin,\n          message: `⚔️ ${actor.name} passes against ${target.name} with a margin of +${margin}.`\n        };\n      } \n      \n      if (margin &lt; 0) {\n        return {\n          targetName: target.name,\n          status: 'defeat',\n          margin,\n          message: `❌ ${actor.name} fails against ${target.name} with a margin of${margin} (${actor.successes} vs${target.successes} successes).`\n        };\n      }\n\n      return {\n        targetName: target.name,\n        status: 'tie',\n        margin: 0,\n        message: `⚖️ Perfect tie between ${actor.name} and ${target.name} (${actor.successes} successes each).`\n      };\n    });\n  }\n}"
+  },
+  {
+    "objectID": "projects.html#mots-clés-techniques-1",
+    "href": "projects.html#mots-clés-techniques-1",
+    "title": "Projets",
+    "section": "Mots-clés techniques",
+    "text": "Mots-clés techniques\nTypeScript\nJavaScript\nFoundry VTT API\nHTML / CSS\nGit"
   },
   {
     "objectID": "index.html",
