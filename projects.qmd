@@ -47,58 +47,207 @@ Cluster SLURM
 <summary>💻 Dérouler pour voir la logique de résolution (TypeScript)</summary>
 
 ```typescript
-/**
- * Stack technique : TypeScript, JavaScript, Foundry VTT API, HTML/CSS, Git
- */
+mport { Confrontation, CombatantState, ResolvedCombatant, WoundCalculation, ModifierType } from './types';
+import { T } from '../utils/translations';
 
-interface Combatant {
-  id: string;
-  name: string;
-  successes: number;
-  actionType: 'Combat' | 'Defense' | 'Utility';
+export interface ConfrontationReportLine {
+    actorId: string;
+    opponentId: string;
+    actorWins: number;
+    opponentWins: number;
+    victoryLevel: number;
+    narrativeSummary: string;
 }
 
-interface ConfrontationOutcome {
-  targetName: string;
-  status: 'victory' | 'defeat' | 'tie';
-  margin: number;
-  message: string;
-}
+export class ConfrontationEngine {
+    
+    // Helper to fetch actor equipment stats from Foundry Canvas Tokens
+    private static getActorEquipmentData(tokenId: string) {
+        // @ts-ignore
+        const token = canvas.tokens?.placeables.find((t: any) => t.id === tokenId || t.document?.id === tokenId);
+        const actor: any = token?.actor;
+        
+        if (!actor) return { armor: 0, armorBane: 0 };
 
-export class CogentCombatResolver {
-  /**
-   * Calcule les résultats d'une confrontation entre un attaquant et ses cibles.
-   */
-  public static resolveConfrontation(actor: Combatant, targets: Combatant[]): ConfrontationOutcome[] {
-    return targets.map(target => {
-      const margin = actor.successes - target.successes;
+        // 1. Fetch active weapon armorBane
+        const weapons = actor.system?.weapons || [];
+        const activeWeapon = weapons.find((w: any) => w.active === 1) || weapons[0];
+        const armorBane = activeWeapon?.armorBane || 0;
 
-      if (margin > 0) {
+        // 2. Fetch total armor defense
+        const armorList = actor.system?.armor || [];
+        const totalArmor = armorList.reduce((sum: number, a: any) => sum + (a.defense || 0), 0);
+
+        if (totalArmor < 0) {
+            throw new Error(T.warningNonNegativeArmor);
+        }
+
+        return { armor: totalArmor, armorBane };
+    }
+    public static getManeuverLabel(vl: number): string {
+        if (vl >= 5) return T.vlFive;
+        if (vl === 4) return T.vlFour;
+        if (vl === 3) return T.vlThree;
+        if (vl === 2) return T.vlTwo;
+        if (vl === 1) return T.vlOne;
+        return T.vlZero;
+    }
+
+    public static getInjuryLabel(il: number): string {
+        if (il >= 5) return T.ilFive;
+        if (il === 4) return T.ilFour;
+        if (il === 3) return T.ilThree;
+        if (il === 2) return T.ilTwo;
+        if (il === 1) return T.ilOne;
+        return T.ilZero;
+    }
+
+    public static resolveConfrontation(confrontation: Confrontation): Confrontation {
+        const results: Record<string, ResolvedCombatant> = {};
+
+        for (const [tokenId, combatant] of Object.entries(confrontation.combatants)) {
+            const modifierBonus = this.getModifierBonus(combatant.modifierType);
+            const baseWins = combatant.roll?.wins || 0;
+            const finalWins = baseWins + modifierBonus;
+
+            const victoryLevels = this.calculateVictoryLevels(combatant, confrontation.combatants, finalWins);
+            const wounds: Record<string, WoundCalculation> = {};
+
+            // Calculate armor & wound outcomes for each target
+            const actorData = this.getActorEquipmentData(tokenId);
+
+            for (const targetId of combatant.targetIds) {
+                const vl = victoryLevels[targetId] || 0;
+                
+                if (vl > 0 && combatant.actionType !== 'defense') {
+                    const targetData = this.getActorEquipmentData(targetId);
+                    
+                    const effectiveArmor = Math.max(0, targetData.armor - actorData.armorBane);
+                    const maxInjuryLevel = Math.max(0, vl - effectiveArmor);
+
+                    wounds[targetId] = {
+                        targetId,
+                        victoryLevel: vl,
+                        defenderArmor: targetData.armor,
+                        attackerArmorBane: actorData.armorBane,
+                        effectiveArmor,
+                        maxManeuver: this.getManeuverLabel(vl),
+                        maxInjury: this.getInjuryLabel(maxInjuryLevel),
+                        maxInjuryLevel
+                    };
+                }
+            }
+
+            results[tokenId] = {
+                tokenId,
+                finalWins,
+                victoryLevels,
+                wounds
+            };
+        }
+
         return {
-          targetName: target.name,
-          status: 'victory',
-          margin,
-          message: `⚔️ ${actor.name} passes against ${target.name} with a margin of +${margin}.`
+            ...confrontation,
+            results,
+            isResolved: true
         };
-      } 
-      
-      if (margin < 0) {
-        return {
-          targetName: target.name,
-          status: 'defeat',
-          margin,
-          message: `❌ ${actor.name} fails against ${target.name} with a margin of${margin} (${actor.successes} vs${target.successes} successes).`
-        };
-      }
+    }
 
-      return {
-        targetName: target.name,
-        status: 'tie',
-        margin: 0,
-        message: `⚖️ Perfect tie between ${actor.name} and ${target.name} (${actor.successes} successes each).`
-      };
-    });
-  }
+    public static generateReport(
+        confrontation: Confrontation, 
+        getTokenName: (id: string) => string = (id) => id,
+        povTokenId?: string | null
+    ): ConfrontationReportLine[] {
+        if (!confrontation.results || !confrontation.isResolved) {
+            return [];
+        }
+
+        const reportLines: ConfrontationReportLine[] = [];
+
+        for (const [actorId, actorCombatant] of Object.entries(confrontation.combatants)) {
+            if (povTokenId && actorId !== povTokenId) continue;
+
+            const actorResult = confrontation.results[actorId];
+            if (!actorResult) continue;
+
+            const actorName = getTokenName(actorId);
+
+            for (const opponentId of actorCombatant.targetIds) {
+                const opponentResult = confrontation.results[opponentId];
+                const opponentName = getTokenName(opponentId);
+                const opponentCombatant = confrontation.combatants[opponentId];
+
+                const actorWins = actorResult.finalWins;
+                const opponentWins = opponentResult ? opponentResult.finalWins : 0;
+                const victoryLevel = actorResult.victoryLevels[opponentId] || 0;
+                const winDifference = actorWins - opponentWins;
+
+                let narrativeSummary = '';
+                const isActorDefending = actorCombatant.actionType === 'defense';
+                const isOpponentDefending = opponentCombatant?.actionType === 'defense';
+
+                if (winDifference > 0) {
+                    if (isActorDefending) {
+                        narrativeSummary = T.reportDefenseSuccess(actorName, opponentName, actorWins, opponentWins);
+                    } else {
+                        narrativeSummary = T.reportAttackSuccess(actorName, opponentName, victoryLevel, actorWins, opponentWins);
+                    }
+                } else if (winDifference === 0) {
+                    if (isActorDefending && !isOpponentDefending) {
+                        narrativeSummary = T.reportDefenseTieActor(actorName, opponentName, actorWins);
+                    } else if (!isActorDefending && isOpponentDefending) {
+                        narrativeSummary = T.reportDefenseTieOpponent(actorName, opponentName, actorWins);
+                    } else {
+                        narrativeSummary = T.reportTie(actorName, opponentName, actorWins); 
+                    }
+                } else {
+                    narrativeSummary = T.reportFailure(actorName, opponentName, Math.abs(winDifference), actorWins, opponentWins);
+                }
+
+                reportLines.push({
+                    actorId,
+                    opponentId,
+                    actorWins,
+                    opponentWins,
+                    victoryLevel,
+                    narrativeSummary
+                });
+            }
+        }
+
+        return reportLines;
+    }
+
+    private static getModifierBonus(modifierType?: ModifierType): number {
+        switch (modifierType) {
+            case 'flank':
+            case 'high ground':
+                return 2; 
+            default:
+                return 0;
+        }
+    }
+
+    private static calculateVictoryLevels(
+        combatant: CombatantState, 
+        allCombatants: Record<string, CombatantState>,
+        finalWins: number
+    ): Record<string, number> {
+        const victoryLevels: Record<string, number> = {};
+
+        for (const targetId of combatant.targetIds) {
+            const target = allCombatants[targetId];
+            const targetWins = target?.roll?.wins || 0;
+            
+            if (combatant.actionType === 'defense') {
+                victoryLevels[targetId] = Math.min(0, finalWins - targetWins);
+            } else {
+                victoryLevels[targetId] = finalWins - targetWins;
+            }
+        }
+
+        return victoryLevels;
+    }
 }
 ```
 
