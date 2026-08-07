@@ -9,10 +9,9 @@ title: "Projets"
 ## Détails d'implémentation
 
 - Développé avec Snakemake.
-- Repose principalement sur la suite d'outils *vg* ("variation graphs").
-Les étapes spécifiques au fonctionnement de l'outils (formatage et filtrage des données) ont été implémentées en python.
+- Repose principalement sur la suite d'outils *vg* ("variation graphs"). Les étapes spécifiques au fonctionnement de l'outil (formatage et filtrage des données) ont été implémentées en python.
 - Chaque étape est exécutée dans un conteneur adapté (Apptainer).
-- Compatible avec les cluster de type SLURM.
+- Compatible avec les clusters de type SLURM.
 - Paramétrable depuis un fichier de configuration YAML (config.yaml).
 
 ## Mots-clés techniques
@@ -26,3 +25,89 @@ Cluster SLURM
 ---
 
 [📄 Télécharger le poster en PDF](JOBIM_2025_poster_grauflow.pdf)
+
+---
+
+# Cogent System Combat Manager
+
+**"Foundry VTT Module"**: Une extension TypeScript / JavaScript pour la plate-forme de jeu de rôle en ligne **Foundry VTT**, automatisant le suivi et la résolution simultanée des confrontations selon le système de règles *Cogent Roleplay*.
+
+![Aperçu du module Cogent System Combat Manager](exemple_foundry.png){width=85% fig-align="center"}
+
+## Détails d'implémentation
+
+- Développé en TypeScript pour l'API de Foundry VTT.
+- Modélisation et automatisation de la résolution des affrontements simultanés (gestion de cibles multiples).
+- Calcul dynamique des marges de réussite, échecs et égalités à partir des jetés de dés.
+- Génération automatique et rendu HTML de rapports narratifs.
+
+## Extrait de code
+
+<details>
+<summary>💻 Dérouler pour voir la logique de résolution (TypeScript)</summary>
+
+```typescript
+/**
+ * Stack technique : TypeScript, JavaScript, Foundry VTT API, HTML/CSS, Git
+ */
+
+interface Combatant {
+  id: string;
+  name: string;
+  successes: number;
+  actionType: 'Combat' | 'Defense' | 'Utility';
+}
+
+interface ConfrontationOutcome {
+  targetName: string;
+  status: 'victory' | 'defeat' | 'tie';
+  margin: number;
+  message: string;
+}
+
+export class CogentCombatResolver {
+  /**
+   * Calcule les résultats d'une confrontation entre un attaquant et ses cibles.
+   */
+  public static resolveConfrontation(actor: Combatant, targets: Combatant[]): ConfrontationOutcome[] {
+    return targets.map(target => {
+      const margin = actor.successes - target.successes;
+
+      if (margin > 0) {
+        return {
+          targetName: target.name,
+          status: 'victory',
+          margin,
+          message: `⚔️ ${actor.name} passes against ${target.name} with a margin of +${margin}.`
+        };
+      } 
+      
+      if (margin < 0) {
+        return {
+          targetName: target.name,
+          status: 'defeat',
+          margin,
+          message: `❌ ${actor.name} fails against ${target.name} with a margin of${margin} (${actor.successes} vs${target.successes} successes).`
+        };
+      }
+
+      return {
+        targetName: target.name,
+        status: 'tie',
+        margin: 0,
+        message: `⚖️ Perfect tie between ${actor.name} and ${target.name} (${actor.successes} successes each).`
+      };
+    });
+  }
+}
+```
+
+</details>
+
+## Mots-clés techniques
+
+TypeScript  
+JavaScript  
+Foundry VTT API  
+HTML / CSS  
+Git
