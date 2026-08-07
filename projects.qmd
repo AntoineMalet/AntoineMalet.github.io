@@ -260,3 +260,4 @@ JavaScript
 Foundry VTT API  
 HTML / CSS  
 Git
+Développement assisté par IA (LLM)
