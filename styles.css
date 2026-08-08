@@ -30,4 +30,16 @@
   color: #666;           /* optional color */
 }
 
+/* Force l'alignement à gauche et désactive la césure des mots */
+p, #quarto-content p {
+  text-align: left !important;
+  hyphens: none !important;
+  -webkit-hyphens: none !important;
+}
 
+/* Conserve uniquement le centrage pour les figures / légendes */
+figure, figure figcaption {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
