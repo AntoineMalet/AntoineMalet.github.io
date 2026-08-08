@@ -37,8 +37,6 @@ Cluster SLURM
   <figcaption style="margin-top: 0.5em; color: #666;">Aperçu du module Cogent System Combat Manager</figcaption>
 </figure>
 
-![Aperçu du module Cogent System Combat Manager](exemple_foundry.png){width=85% fig-align="center"}
-
 ## Détails d'implémentation
 
 - Développé en TypeScript pour l'API de Foundry VTT.
