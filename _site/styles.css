@@ -29,3 +29,8 @@
   margin: 0;             /* remove extra spacing */
   color: #666;           /* optional color */
 }
+
+#quarto-content p {
+  text-align: justify;
+  hyphens: auto;
+}
