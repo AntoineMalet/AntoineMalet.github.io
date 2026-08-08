@@ -3,7 +3,7 @@
 git add .
 git commit -m "update"
 git push
-quarto publish gh-pages
+quarto publish gh-pages --no-prompt
 git add .
 git commit -m "post-publish update"
 git push origin master
