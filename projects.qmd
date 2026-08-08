@@ -265,5 +265,5 @@ TypeScript
 JavaScript  
 Foundry VTT API  
 HTML / CSS  
-Git  
+Développement collaboratif (Git)  
 Développement assisté par IA (LLM)
