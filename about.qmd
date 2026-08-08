@@ -78,7 +78,7 @@ Université Catholique de Lyon
 # Compétences techniques
 
 ### Développement
-Python, C, Bash, Web, Snakemake, Conda, Apptainer, Git, tests unitaires
+Python, C (notions), Bash, Web, Snakemake, Conda, Apptainer, Git, tests unitaires, Typescript/Framework react (notions).
 
 ### Bioinformatique
 NGS, Génomique, GenomeBrowsers (NCBI, Ensembl, Uniprot), APIs, données OMICs
