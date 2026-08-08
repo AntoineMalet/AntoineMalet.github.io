@@ -32,6 +32,12 @@ Cluster SLURM
 
 **"Foundry VTT Module"**: Une extension TypeScript / JavaScript pour la plate-forme de jeu de rôle en ligne **Foundry VTT**, automatisant le suivi et la résolution simultanée des confrontations selon le système de règles [*Cogent Roleplay*](https://cogentroleplay.com/).
 
+<style>
+figure figcaption {
+  text-align: center;
+}
+</style>
+
 ![Aperçu du module Cogent System Combat Manager](exemple_foundry.png){width=85% fig-align="center"}
 
 ## Détails d'implémentation
