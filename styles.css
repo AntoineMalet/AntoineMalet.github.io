@@ -1,4 +1,6 @@
 /* css styles */
+/*DON'T TRY MESSING AROUND WITH TEXT ALIGNMENT, IT MAY BREAK THE WEBSITE*/
+
 .quarto-title-block .title {
   text-align: center;
   font-weight: 600;
