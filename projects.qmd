@@ -50,7 +50,7 @@ Une extension TypeScript / JavaScript pour la plate-forme de jeu de rôle en lig
 <summary>💻 Dérouler pour voir un exemple d'implémentation (TypeScript)</summary>
 
 ```typescript
-mport { Confrontation, CombatantState, ResolvedCombatant, WoundCalculation, ModifierType } from './types';
+import { Confrontation, CombatantState, ResolvedCombatant, WoundCalculation, ModifierType } from './types';
 import { T } from '../utils/translations';
 
 export interface ConfrontationReportLine {
