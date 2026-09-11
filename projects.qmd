@@ -223,6 +223,64 @@ if __name__=='__main__':
 </details>
 
 <details>
+<summary>📈 Dérouler pour voir un exemple d'implémentation (R)</summary>
+
+```r
+# ========== DATA FILTERING SECTION ==========
+# Apply user filters and plotly zoom
+filtered_data <- reactive({
+  df <- req(data())
+  
+  # Apply slider filters
+  filtered_df <- df %>% 
+    dplyr::filter(abs(log2FC) >= input$log2FC_slider, pval <= input$p_val_slider)      # Apply plotly zoom filters if present   plotly_event <- event_data("plotly_relayout", priority = "event")   if (!is.null(plotly_event) && length(plotly_event) > 0) {     x_range_valid <- !is.null(plotly_event$`xaxis.range[0]`) && !is.null(plotly_event$`xaxis.range[1]`)
+    y_range_valid <- !is.null(plotly_event$`yaxis.range[0]`) && !is.null(plotly_event$`yaxis.range[1]`)
+    
+    if (x_range_valid && y_range_valid) {
+      filtered_df <- filtered_df %>%
+        dplyr::filter(log2FC >= plotly_event$`xaxis.range[0]` & log2FC <= plotly_event$`xaxis.range[1]` & 
+                      -log10(pval) >= plotly_event$`yaxis.range[0]` & -log10(pval) <= plotly_event$`yaxis.range[1]`)
+    }
+  }
+  filtered_df 
+})
+
+# ========== VISUALIZATION SECTION ==========
+# Create volcano plot
+volcano_plot <- reactive({
+  df <- req(data())
+  
+  # Color code points based on significance
+  df$color <- ifelse(df$pval <= input$p_val_slider & abs(df$log2FC) >= input$log2FC_slider, 
+                     ifelse(df$log2FC > 0, "green", "red"), "grey")
+  
+  # Generate interactive plotly volcano plot
+  plot_ly(df, x = ~log2FC, y = -log10(df$pval), type = 'scatter', mode = 'markers',
+          text = ~GeneName, hoverinfo = 'text', 
+          marker = list(color = ~color, size = 3)) %>%
+    layout(title = "Volcano Plot",
+           xaxis = list(title = "Log2 Fold Change"),
+           yaxis = list(title = "-Log10 P-value", range = c(-1, 15)),
+           showlegend = FALSE)
+})
+
+# Render volcano plot
+output$volcano_plot <- renderPlotly({ volcano_plot() })
+
+# Render filtered data table
+output$table <- DT::renderDataTable({
+  datatable(filtered_data(), options = list(pageLength = 10, scrollX = TRUE))
+})
+
+# Download handler for filtered data
+output$download <- downloadHandler(
+  filename = function() { paste("filtered_data_", Sys.Date(), ".csv", sep = "") },
+  content = function(file) { write.csv(filtered_data(), file, row.names = FALSE) }
+)
+```
+</details>
+
+<details>
 <summary>💻 Dérouler pour voir un exemple d'implémentation (TypeScript)</summary>
 
 ```typescript
