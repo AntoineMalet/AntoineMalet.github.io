@@ -2,14 +2,14 @@
 title: "Projets"
 ---
 
-# FEAther
+# Pojet de Masrer 2 (co-développé par Lucien PIAT et Maël LOUIS) 
 
 ```{=html}
 <div class="custom-card">
   <h3>FEAther</h3>
   
-  <p class="custom-card-text">Shiny GUI for functional enrichment analysis of biological data.</p>
-  <p class="custom-card-italic">Supervised by : Asst. Prof Hélène Dauchel</p>
+  <p class="custom-card-text">Application RShiny pour l'analyse d'enrichissement fonctionnel.</p>
+  <p class="custom-card-italic">Supervisé par: Hélène DAUCHEL</p>
   
   <div class="badge-container">
     <span class="custom-badge">R</span>
