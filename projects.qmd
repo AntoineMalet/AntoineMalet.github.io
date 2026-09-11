@@ -2,13 +2,13 @@
 title: "Projets"
 ---
 
-# Pojet de Masrer 2 (co-développé par Lucien PIAT et Maël LOUIS) 
+# Pojet de Masrer 2 
 
 ```{=html}
 <div class="custom-card">
   <h3>FEAther</h3>
   
-  <p class="custom-card-text">Application RShiny pour l'analyse d'enrichissement fonctionnel.</p>
+  <p class="custom-card-text">Application RShiny pour l'analyse d'enrichissement fonctionnel (co-développée par Lucien PIAT et Maël LOUIS).</p>
   <p class="custom-card-italic">Supervisé par: Hélène DAUCHEL</p>
   
   <div class="badge-container">
@@ -27,6 +27,8 @@ title: "Projets"
   </div>
 </div>
 ```
+
+# Projet d'alternance
 
 ```{=html}
 <div class="custom-card">
@@ -62,6 +64,35 @@ title: "Projets"
 ```
 
 ---
+# Exemple de script Python: le jeu du Pendu en CLI
+
+```{=html}
+<div class="custom-card">
+  <h3>Le Pendu (Script Python modulaire)</h3>
+  
+  <p class="custom-card-text">
+    Un jeu du Pendu en ligne de commande pensé pour illustrer des habitudes de code propres, modulaires et idiomatiques en Python.
+  </p>
+
+  <h4 style="font-size: 1.1rem; margin-top: 15px; color: #0f172a;">Habitudes de développement & approche</h4>
+  <ul style="color: #475569; font-size: 0.95em; margin-bottom: 16px; padding-left: 20px;">
+    <li><strong>Séparation des préoccupations :</strong> Isolation de la logique de prétraitement et de nettoyage des données brutes (classe <code>preprocessing</code>) de la logique pure du jeu (classe <code>pendu</code>).</li>
+    <li><strong>Architecture utilitaire :</strong> Regroupement des fonctions apparentées via des méthodes statiques (<code>@staticmethod</code>), évitant les instanciations inutiles.</li>
+    <li><strong>Bibliothèque standard :</strong> Exploitation native de modules robustes de Python (<code>unicodedata</code> pour la normalisation et la gestion des accents, <code>os</code>, <code>random</code>) sans dépendances externes superflues.</li>
+    <li><strong>Code idiomatique (*Pythonic*) :</strong> Utilisation naturelle des compréhensions de listes et de dictionnaires pour maximiser la concision et la lisibilité des traitements.</li>
+    <li><strong>Hygiène logicielle :</strong> Encapsulation propre du script principal via le bloc de garde standard (<code>if __name__ == '__main__':</code>).</li>
+  </ul>
+  
+  <div class="badge-container">
+    <span class="custom-badge">Python</span>
+    <span class="custom-badge">Standard Library</span>
+    <span class="custom-badge">Clean Code</span>
+    <span class="custom-badge">CLI</span>
+  </div>
+</div>
+```
+
+# Application TypeScript
 
 ```{=html}
 <div class="custom-card">
@@ -95,7 +126,7 @@ title: "Projets"
 </div>
 ```
 
-## Extrait de code
+# Extraits de code
 
 <details>
 <summary>💻 Dérouler pour voir un exemple d'implémentation (TypeScript)</summary>
@@ -306,4 +337,5 @@ export class ConfrontationEngine {
 ```
 
 </details>
+
 
