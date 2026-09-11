@@ -28,6 +28,7 @@ title: "Projets"
 </div>
 ```
 
+```{=html}
 <div class="custom-card">
   <h3>GrAuFlow</h3>
   
@@ -58,6 +59,7 @@ title: "Projets"
     </a>
   </div>
 </div> 
+```
 
 ---
 
