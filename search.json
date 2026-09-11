@@ -4,21 +4,21 @@
     "href": "projects.html",
     "title": "Projets",
     "section": "",
-    "text": "“Graph augmentation workflow”: Un workflow Snakemake pour l’augmentation de graphes de pangénomes (ajout de nouvelles données génomiques à un graphe de pangénome préexistant) à partir de short-reads assemblés.\n\n\n\nDéveloppé avec Snakemake.\nRepose principalement sur la suite d’outils vg (“variation graphs”). Les étapes spécifiques au fonctionnement de l’outil (formatage et filtrage des données) ont été implémentées en python.\nChaque étape est exécutée dans un conteneur adapté (Apptainer).\nCompatible avec les clusters de type SLURM.\nParamétrable depuis un fichier de configuration YAML (config.yaml).\n\n\n\n\nPython\nSnakemake\nApptainer\nGit\nCluster SLURM\n\n📄 Télécharger le poster en PDF"
+    "text": "Application RShiny pour réaliser des analyses d’enrichissement fonctionnel (notamment ORA/GSEA).\n\n\nSupervisé par : Hélène DAUCHEL. Co-développeurs: Maël LOUIS, Lucien PIAT\n\n\n&lt;span class=\"custom-badge\"&gt;R&lt;/span&gt;\n&lt;span class=\"custom-badge\"&gt;Shiny&lt;/span&gt;\n&lt;span class=\"custom-badge\"&gt;Functional Enrichment Analysis&lt;/span&gt;\n\n\n&lt;a href=\"https://github.com/Lucien-Piat/FEAther\" target=\"_blank\"&gt;\n  &lt;i class=\"bi bi-github\"&gt;&lt;/i&gt; GitHub\n&lt;/a&gt;\n&lt;a href=\"https://lucien-piat.shinyapps.io/feather/\" target=\"_blank\"&gt;\n  &lt;i class=\"bi bi-box-arrow-up-right\"&gt;&lt;/i&gt; Website\n&lt;/a&gt;"
   },
   {
     "objectID": "projects.html#détails-dimplémentation",
     "href": "projects.html#détails-dimplémentation",
     "title": "Projets",
-    "section": "",
-    "text": "Développé avec Snakemake.\nRepose principalement sur la suite d’outils vg (“variation graphs”). Les étapes spécifiques au fonctionnement de l’outil (formatage et filtrage des données) ont été implémentées en python.\nChaque étape est exécutée dans un conteneur adapté (Apptainer).\nCompatible avec les clusters de type SLURM.\nParamétrable depuis un fichier de configuration YAML (config.yaml)."
+    "section": "Détails d’implémentation",
+    "text": "Détails d’implémentation\n\nDéveloppé avec Snakemake.\nRepose principalement sur la suite d’outils vg (“variation graphs”). Les étapes spécifiques au fonctionnement de l’outil (formatage et filtrage des données) ont été implémentées en python.\nChaque étape est exécutée dans un conteneur adapté (Apptainer).\nCompatible avec les clusters de type SLURM.\nParamétrable depuis un fichier de configuration YAML (config.yaml)."
   },
   {
     "objectID": "projects.html#mots-clés-techniques",
     "href": "projects.html#mots-clés-techniques",
     "title": "Projets",
-    "section": "",
-    "text": "Python\nSnakemake\nApptainer\nGit\nCluster SLURM\n\n📄 Télécharger le poster en PDF"
+    "section": "Mots-clés techniques",
+    "text": "Mots-clés techniques\nPython\nSnakemake\nApptainer\nGit\nCluster SLURM\n\n📄 Télécharger le poster en PDF"
   },
   {
     "objectID": "projects.html#détails-dimplémentation-1",
