@@ -45,3 +45,60 @@ figure, figure figcaption {
   margin-left: auto;
   margin-right: auto;
 }
+
+.custom-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 24px;
+  background-color: #ffffff;
+  width: 100%; 
+  box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+  margin-bottom: 2rem;
+}
+.custom-card h3 {
+  margin-top: 0;
+  color: #0f172a;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.custom-card-img {
+  display: block;
+  margin: 0 auto 20px auto;
+  max-width: 120px; /* Adjust based on your pixel art size */
+  image-rendering: pixelated; /* Keeps pixel art sharp */
+}
+.custom-card-text {
+  color: #475569;
+  font-size: 1rem;
+  margin-bottom: 12px;
+}
+.custom-card-italic {
+  color: #64748b;
+  font-style: italic;
+  margin-bottom: 16px;
+}
+.badge-container {
+  margin-bottom: 20px;
+}
+.custom-badge {
+  background-color: #ecfdf5;
+  color: #065f46;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  margin-right: 8px;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+.link-container a {
+  color: #0f172a;
+  text-decoration: none;
+  font-weight: 600;
+  margin-right: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.link-container a:hover {
+  color: #10b981;
+}
