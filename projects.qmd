@@ -129,7 +129,7 @@ title: "Projets"
 # Extraits de code
 
 <details>
-<summary>Dérouler pour voir un exemple d'implémentation (Python 🐍)</summary>
+<summary>🐍 Dérouler pour voir un exemple d'implémentation (Python)</summary>
 
 ```python
 import os
