@@ -155,12 +155,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#pojet-de-masrer-2-co-développé-par-lucien-piat-et-maël-louis" id="toc-pojet-de-masrer-2-co-développé-par-lucien-piat-et-maël-louis" class="nav-link active" data-scroll-target="#pojet-de-masrer-2-co-développé-par-lucien-piat-et-maël-louis">Pojet de Masrer 2 (co-développé par Lucien PIAT et Maël LOUIS)</a></li>
-  <li><a href="#cogent-roleplay-pour-foundryvtt" id="toc-cogent-roleplay-pour-foundryvtt" class="nav-link" data-scroll-target="#cogent-roleplay-pour-foundryvtt">Cogent Roleplay pour FoundryVTT</a>
+  <li><a href="#pojet-de-masrer-2-co-développé-par-lucien-piat-et-maël-louis" id="toc-pojet-de-masrer-2-co-développé-par-lucien-piat-et-maël-louis" class="nav-link active" data-scroll-target="#pojet-de-masrer-2-co-développé-par-lucien-piat-et-maël-louis">Pojet de Masrer 2 (co-développé par Lucien PIAT et Maël LOUIS)</a>
   <ul class="collapse">
-  <li><a href="#détails-dimplémentation" id="toc-détails-dimplémentation" class="nav-link" data-scroll-target="#détails-dimplémentation">Détails d’implémentation</a></li>
   <li><a href="#extrait-de-code" id="toc-extrait-de-code" class="nav-link" data-scroll-target="#extrait-de-code">Extrait de code</a></li>
-  <li><a href="#mots-clés-techniques" id="toc-mots-clés-techniques" class="nav-link" data-scroll-target="#mots-clés-techniques">Mots-clés techniques</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -190,7 +187,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="pojet-de-masrer-2-co-développé-par-lucien-piat-et-maël-louis" class="level1">
 <h1>Pojet de Masrer 2 (co-développé par Lucien PIAT et Maël LOUIS)</h1>
 <div class="custom-card">
-  <h3 class="anchored" data-anchor-id="pojet-de-masrer-2-co-développé-par-lucien-piat-et-maël-louis">FEAther</h3>
+  <h3 class="anchored">FEAther</h3>
   
   <p class="custom-card-text">Application RShiny pour l'analyse d'enrichissement fonctionnel.</p>
   <p class="custom-card-italic">Supervisé par: Hélène DAUCHEL</p>
@@ -241,25 +238,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </div> 
 <hr>
-</section>
-<section id="cogent-roleplay-pour-foundryvtt" class="level1">
-<h1>Cogent Roleplay pour FoundryVTT</h1>
-<p>Une extension TypeScript / JavaScript pour la plate-forme de jeu de rôle en ligne <strong>Foundry VTT</strong>, implémentant un nouveau système de jeu selon les règles de <a href="https://cogentroleplay.com/"><em>Cogent Roleplay</em></a>. Projet réalisé sur Git avec l’aide d’un collaborateur. Ci-dessous un exemple de l’un des modules, pour aider la résolution des combats entre personnages:</p>
-<figure style="text-align: center; margin: 2em 0;" class="figure">
-<img src="exemple_foundry.png" alt="Aperçu du module Cogent System Combat Manager" style="width: 85%; height: auto; display: block; margin: 0 auto;" class="figure-img">
-<figcaption style="margin-top: 0.5em; color: #666;">
-Aperçu du module Cogent System Combat Manager
-</figcaption>
-</figure>
-<section id="détails-dimplémentation" class="level2">
-<h2 class="anchored" data-anchor-id="détails-dimplémentation">Détails d’implémentation</h2>
-<ul>
-<li>Développé en TypeScript pour l’API de Foundry VTT.</li>
-<li>Modélisation et automatisation de la résolution des affrontements simultanés (gestion de cibles multiples).</li>
-<li>Calcul dynamique des marges de réussite, échecs et égalités à partir des jetés de dés.</li>
-<li>Génération automatique et rendu HTML de rapports narratifs.</li>
-</ul>
-</section>
+<div class="custom-card">
+  <h3 class="anchored">Cogent Roleplay pour FoundryVTT</h3>
+  
+  <p class="custom-card-text">
+    Une extension TypeScript / JavaScript pour la plate-forme de jeu de rôle en ligne <strong>Foundry VTT</strong>, implémentant un nouveau système de jeu selon les règles de <a href="[https://cogentroleplay.com/](https://cogentroleplay.com/)" target="_blank">Cogent Roleplay</a>. Projet réalisé sur Git avec l'aide d'un collaborateur. Ci-dessous un exemple de l'un des modules, pour aider la résolution des combats entre personnages :
+  </p>
+
+  <figure style="text-align: center; margin: 1.5em 0;" class="figure">
+    <img src="exemple_foundry.png" alt="Aperçu du module Cogent System Combat Manager" style="width: 85%; height: auto; display: block; margin: 0 auto; border-radius: 6px; border: 1px solid #e2e8f0;" class="figure-img">
+    <figcaption style="margin-top: 0.5em; color: #666; font-size: 0.9em;">Aperçu du module Cogent System Combat Manager</figcaption>
+  </figure>
+
+  <h4 style="font-size: 1.1rem; margin-top: 15px; color: #0f172a;" class="anchored">Détails d'implémentation</h4>
+  <ul style="color: #475569; font-size: 0.95em; margin-bottom: 16px; padding-left: 20px;">
+    <li>Développé en TypeScript pour l'API de Foundry VTT.</li>
+    <li>Modélisation et automatisation de la résolution des affrontements simultanés (gestion de cibles multiples).</li>
+    <li>Calcul dynamique des marges de réussite, échecs et égalités à partir des jetés de dés.</li>
+    <li>Génération automatique et rendu HTML de rapports narratifs.</li>
+  </ul>
+  
+  <div class="badge-container">
+    <span class="custom-badge">TypeScript</span>
+    <span class="custom-badge">JavaScript</span>
+    <span class="custom-badge">Foundry VTT API</span>
+    <span class="custom-badge">HTML / CSS</span>
+    <span class="custom-badge">Développement collaboratif (Git)</span>
+    <span class="custom-badge">Développement assisté par IA (LLM)</span>
+  </div>
+</div>
 <section id="extrait-de-code" class="level2">
 <h2 class="anchored" data-anchor-id="extrait-de-code">Extrait de code</h2>
 <details>
@@ -469,15 +476,6 @@ Aperçu du module Cogent System Combat Manager
 <span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a>    }</span>
 <span id="cb1-202"><a href="#cb1-202" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
-</section>
-<section id="mots-clés-techniques" class="level2">
-<h2 class="anchored" data-anchor-id="mots-clés-techniques">Mots-clés techniques</h2>
-<p>TypeScript<br>
-JavaScript<br>
-Foundry VTT API<br>
-HTML / CSS<br>
-Développement collaboratif (Git)<br>
-Développement assisté par IA (LLM)</p>
 
 
 </section>
