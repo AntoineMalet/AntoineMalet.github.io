@@ -28,29 +28,36 @@ title: "Projets"
 </div>
 ```
 
-# GrAuFlow
+<div class="custom-card">
+  <h3>GrAuFlow</h3>
+  
+  <p class="custom-card-text">
+    <strong>"Graph augmentation workflow"</strong> : Un workflow Snakemake pour l'augmentation de graphes de pangénomes (ajout de nouvelles données génomiques à un graphe de pangénome préexistant) à partir de <em>short-reads</em> assemblés.
+  </p>
 
-**"Graph augmentation workflow"**: Un workflow Snakemake pour l'augmentation de graphes de pangénomes (ajout de nouvelles données génomiques à un graphe de pangénome préexistant) à partir de *short-reads* assemblés.
-
-## Détails d'implémentation
-
-- Développé avec Snakemake.
-- Repose principalement sur la suite d'outils *vg* ("variation graphs"). Les étapes spécifiques au fonctionnement de l'outil (formatage et filtrage des données) ont été implémentées en python.
-- Chaque étape est exécutée dans un conteneur adapté (Apptainer).
-- Compatible avec les clusters de type SLURM.
-- Paramétrable depuis un fichier de configuration YAML (config.yaml).
-
-## Mots-clés techniques
-
-Python  
-Snakemake  
-Apptainer  
-Git  
-Cluster SLURM  
-
----
-
-[📄 Télécharger le poster en PDF](JOBIM_2025_poster_grauflow.pdf)
+  <h4 style="font-size: 1.1rem; margin-top: 15px; color: #0f172a;">Détails d'implémentation</h4>
+  <ul style="color: #475569; font-size: 0.95em; margin-bottom: 16px; padding-left: 20px;">
+    <li>Développé avec Snakemake.</li>
+    <li>Repose principalement sur la suite d'outils <em>vg</em> ("variation graphs"). Les étapes spécifiques au fonctionnement de l'outil (formatage et filtrage des données) ont été implémentées en python.</li>
+    <li>Chaque étape est exécutée dans un conteneur adapté (Apptainer).</li>
+    <li>Compatible avec les clusters de type SLURM.</li>
+    <li>Paramétrable depuis un fichier de configuration YAML (config.yaml).</li>
+  </ul>
+  
+  <div class="badge-container">
+    <span class="custom-badge">Python</span>
+    <span class="custom-badge">Snakemake</span>
+    <span class="custom-badge">Apptainer</span>
+    <span class="custom-badge">Git</span>
+    <span class="custom-badge">Cluster SLURM</span>
+  </div>
+  
+  <div class="link-container">
+    <a href="JOBIM_2025_poster_grauflow.pdf" target="_blank">
+      <i class="bi bi-file-earmark-pdf"></i> Télécharger le poster en PDF
+    </a>
+  </div>
+</div> 
 
 ---
 
