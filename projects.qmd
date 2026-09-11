@@ -2,7 +2,7 @@
 title: "Projets"
 ---
 
-# Pojet de Masrer 2 
+# Pojet de Master 2 
 
 ```{=html}
 <div class="custom-card">
