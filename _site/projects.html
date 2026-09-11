@@ -155,10 +155,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#pojet-de-masrer-2-co-développé-par-lucien-piat-et-maël-louis" id="toc-pojet-de-masrer-2-co-développé-par-lucien-piat-et-maël-louis" class="nav-link active" data-scroll-target="#pojet-de-masrer-2-co-développé-par-lucien-piat-et-maël-louis">Pojet de Masrer 2 (co-développé par Lucien PIAT et Maël LOUIS)</a>
-  <ul class="collapse">
-  <li><a href="#extrait-de-code" id="toc-extrait-de-code" class="nav-link" data-scroll-target="#extrait-de-code">Extrait de code</a></li>
-  </ul></li>
+  <li><a href="#pojet-de-masrer-2" id="toc-pojet-de-masrer-2" class="nav-link active" data-scroll-target="#pojet-de-masrer-2">Pojet de Masrer 2</a></li>
+  <li><a href="#projet-dalternance" id="toc-projet-dalternance" class="nav-link" data-scroll-target="#projet-dalternance">Projet d’alternance</a></li>
+  <li><a href="#exemple-de-script-python-le-jeu-du-pendu-en-cli" id="toc-exemple-de-script-python-le-jeu-du-pendu-en-cli" class="nav-link" data-scroll-target="#exemple-de-script-python-le-jeu-du-pendu-en-cli">Exemple de script Python: le jeu du Pendu en CLI</a></li>
+  <li><a href="#application-typescript" id="toc-application-typescript" class="nav-link" data-scroll-target="#application-typescript">Application TypeScript</a></li>
+  <li><a href="#extraits-de-code" id="toc-extraits-de-code" class="nav-link" data-scroll-target="#extraits-de-code">Extraits de code</a></li>
   </ul>
 </nav>
     </div>
@@ -184,12 +185,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="pojet-de-masrer-2-co-développé-par-lucien-piat-et-maël-louis" class="level1">
-<h1>Pojet de Masrer 2 (co-développé par Lucien PIAT et Maël LOUIS)</h1>
+<section id="pojet-de-masrer-2" class="level1">
+<h1>Pojet de Masrer 2</h1>
 <div class="custom-card">
-  <h3 class="anchored">FEAther</h3>
+  <h3 class="anchored" data-anchor-id="pojet-de-masrer-2">FEAther</h3>
   
-  <p class="custom-card-text">Application RShiny pour l'analyse d'enrichissement fonctionnel.</p>
+  <p class="custom-card-text">Application RShiny pour l'analyse d'enrichissement fonctionnel (co-développée par Lucien PIAT et Maël LOUIS).</p>
   <p class="custom-card-italic">Supervisé par: Hélène DAUCHEL</p>
   
   <div class="badge-container">
@@ -207,8 +208,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </a>
   </div>
 </div>
+</section>
+<section id="projet-dalternance" class="level1">
+<h1>Projet d’alternance</h1>
 <div class="custom-card">
-  <h3 class="anchored">GrAuFlow</h3>
+  <h3 class="anchored" data-anchor-id="projet-dalternance">GrAuFlow</h3>
   
   <p class="custom-card-text">
     <strong>"Graph augmentation workflow"</strong> : Un workflow Snakemake pour l'augmentation de graphes de pangénomes (ajout de nouvelles données génomiques à un graphe de pangénome préexistant) à partir de <em>short-reads</em> assemblés.
@@ -238,8 +242,37 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </div> 
 <hr>
+</section>
+<section id="exemple-de-script-python-le-jeu-du-pendu-en-cli" class="level1">
+<h1>Exemple de script Python: le jeu du Pendu en CLI</h1>
 <div class="custom-card">
-  <h3 class="anchored">Cogent Roleplay pour FoundryVTT</h3>
+  <h3 class="anchored" data-anchor-id="exemple-de-script-python-le-jeu-du-pendu-en-cli">Le Pendu (Script Python modulaire)</h3>
+  
+  <p class="custom-card-text">
+    Un jeu du Pendu en ligne de commande pensé pour illustrer des habitudes de code propres, modulaires et idiomatiques en Python.
+  </p>
+
+  <h4 style="font-size: 1.1rem; margin-top: 15px; color: #0f172a;" class="anchored">Habitudes de développement &amp; approche</h4>
+  <ul style="color: #475569; font-size: 0.95em; margin-bottom: 16px; padding-left: 20px;">
+    <li><strong>Séparation des préoccupations :</strong> Isolation de la logique de prétraitement et de nettoyage des données brutes (classe <code>preprocessing</code>) de la logique pure du jeu (classe <code>pendu</code>).</li>
+    <li><strong>Architecture utilitaire :</strong> Regroupement des fonctions apparentées via des méthodes statiques (<code>@staticmethod</code>), évitant les instanciations inutiles.</li>
+    <li><strong>Bibliothèque standard :</strong> Exploitation native de modules robustes de Python (<code>unicodedata</code> pour la normalisation et la gestion des accents, <code>os</code>, <code>random</code>) sans dépendances externes superflues.</li>
+    <li><strong>Code idiomatique (*Pythonic*) :</strong> Utilisation naturelle des compréhensions de listes et de dictionnaires pour maximiser la concision et la lisibilité des traitements.</li>
+    <li><strong>Hygiène logicielle :</strong> Encapsulation propre du script principal via le bloc de garde standard (<code>if __name__ == '__main__':</code>).</li>
+  </ul>
+  
+  <div class="badge-container">
+    <span class="custom-badge">Python</span>
+    <span class="custom-badge">Standard Library</span>
+    <span class="custom-badge">Clean Code</span>
+    <span class="custom-badge">CLI</span>
+  </div>
+</div>
+</section>
+<section id="application-typescript" class="level1">
+<h1>Application TypeScript</h1>
+<div class="custom-card">
+  <h3 class="anchored" data-anchor-id="application-typescript">Cogent Roleplay pour FoundryVTT</h3>
   
   <p class="custom-card-text">
     Une extension TypeScript / JavaScript pour la plate-forme de jeu de rôle en ligne <strong>Foundry VTT</strong>, implémentant un nouveau système de jeu selon les règles de <a href="[https://cogentroleplay.com/](https://cogentroleplay.com/)" target="_blank">Cogent Roleplay</a>. Projet réalisé sur Git avec l'aide d'un collaborateur. Ci-dessous un exemple de l'un des modules, pour aider la résolution des combats entre personnages :
@@ -267,8 +300,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <span class="custom-badge">Développement assisté par IA (LLM)</span>
   </div>
 </div>
-<section id="extrait-de-code" class="level2">
-<h2 class="anchored" data-anchor-id="extrait-de-code">Extrait de code</h2>
+</section>
+<section id="extraits-de-code" class="level1">
+<h1>Extraits de code</h1>
 <details>
 <summary>
 💻 Dérouler pour voir un exemple d’implémentation (TypeScript)
@@ -478,7 +512,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </details>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
