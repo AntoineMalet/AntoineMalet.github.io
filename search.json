@@ -4,7 +4,7 @@
     "href": "projects.html",
     "title": "Projets",
     "section": "",
-    "text": "Application RShiny pour réaliser des analyses d’enrichissement fonctionnel (notamment ORA/GSEA).\n\n\nSupervisé par : Hélène DAUCHEL. Co-développeurs: Maël LOUIS, Lucien PIAT\n\n\n&lt;span class=\"custom-badge\"&gt;R&lt;/span&gt;\n&lt;span class=\"custom-badge\"&gt;Shiny&lt;/span&gt;\n&lt;span class=\"custom-badge\"&gt;Functional Enrichment Analysis&lt;/span&gt;\n\n\n&lt;a href=\"https://github.com/Lucien-Piat/FEAther\" target=\"_blank\"&gt;\n  &lt;i class=\"bi bi-github\"&gt;&lt;/i&gt; GitHub\n&lt;/a&gt;\n&lt;a href=\"https://lucien-piat.shinyapps.io/feather/\" target=\"_blank\"&gt;\n  &lt;i class=\"bi bi-box-arrow-up-right\"&gt;&lt;/i&gt; Website\n&lt;/a&gt;"
+    "text": "Shiny GUI for functional enrichment analysis of biological data.\n  Supervised by : Asst. Prof Hélène Dauchel\n  \n  \n    R\n    Shiny\n    Functional Enrichment Analysis\n  \n  \n  \n    \n       GitHub\n    \n    \n       Website"
   },
   {
     "objectID": "projects.html#détails-dimplémentation",
