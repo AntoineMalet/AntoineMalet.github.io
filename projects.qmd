@@ -4,13 +4,12 @@ title: "Projets"
 
 # FEAther
 
+```{=html}
 <div class="custom-card">
   <h3>FEAther</h3>
   
-  <img src="feather.png" class="custom-card-img" alt="FEAther Logo">
-  
-  <p class="custom-card-text">Application RShiny pour réaliser des analyses d'enrichissement fonctionnel (notamment ORA/GSEA).</p>
-  <p class="custom-card-italic">Supervisé par : Hélène DAUCHEL. Co-développeurs: Maël LOUIS, Lucien PIAT</p>
+  <p class="custom-card-text">Shiny GUI for functional enrichment analysis of biological data.</p>
+  <p class="custom-card-italic">Supervised by : Asst. Prof Hélène Dauchel</p>
   
   <div class="badge-container">
     <span class="custom-badge">R</span>
@@ -27,6 +26,7 @@ title: "Projets"
     </a>
   </div>
 </div>
+```
 
 # GrAuFlow
 
