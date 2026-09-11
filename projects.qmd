@@ -63,21 +63,37 @@ title: "Projets"
 
 ---
 
-# Cogent Roleplay pour FoundryVTT
+```{=html}
+<div class="custom-card">
+  <h3>Cogent Roleplay pour FoundryVTT</h3>
+  
+  <p class="custom-card-text">
+    Une extension TypeScript / JavaScript pour la plate-forme de jeu de rôle en ligne <strong>Foundry VTT</strong>, implémentant un nouveau système de jeu selon les règles de <a href="[https://cogentroleplay.com/](https://cogentroleplay.com/)" target="_blank">Cogent Roleplay</a>. Projet réalisé sur Git avec l'aide d'un collaborateur. Ci-dessous un exemple de l'un des modules, pour aider la résolution des combats entre personnages :
+  </p>
 
-Une extension TypeScript / JavaScript pour la plate-forme de jeu de rôle en ligne **Foundry VTT**, implémentant un nouveau système de jeu selon les règles de  [*Cogent Roleplay*](https://cogentroleplay.com/). Projet réalisé sur Git avec l'aide d'un collaborateur. Ci-dessous un exemple de l'un des modules, pour aider la résolution des combats entre personnages:
+  <figure style="text-align: center; margin: 1.5em 0;">
+    <img src="exemple_foundry.png" alt="Aperçu du module Cogent System Combat Manager" style="width: 85%; height: auto; display: block; margin: 0 auto; border-radius: 6px; border: 1px solid #e2e8f0;">
+    <figcaption style="margin-top: 0.5em; color: #666; font-size: 0.9em;">Aperçu du module Cogent System Combat Manager</figcaption>
+  </figure>
 
-<figure style="text-align: center; margin: 2em 0;">
-  <img src="exemple_foundry.png" alt="Aperçu du module Cogent System Combat Manager" style="width: 85%; height: auto; display: block; margin: 0 auto;">
-  <figcaption style="margin-top: 0.5em; color: #666;">Aperçu du module Cogent System Combat Manager</figcaption>
-</figure>
-
-## Détails d'implémentation
-
-- Développé en TypeScript pour l'API de Foundry VTT.
-- Modélisation et automatisation de la résolution des affrontements simultanés (gestion de cibles multiples).
-- Calcul dynamique des marges de réussite, échecs et égalités à partir des jetés de dés.
-- Génération automatique et rendu HTML de rapports narratifs.
+  <h4 style="font-size: 1.1rem; margin-top: 15px; color: #0f172a;">Détails d'implémentation</h4>
+  <ul style="color: #475569; font-size: 0.95em; margin-bottom: 16px; padding-left: 20px;">
+    <li>Développé en TypeScript pour l'API de Foundry VTT.</li>
+    <li>Modélisation et automatisation de la résolution des affrontements simultanés (gestion de cibles multiples).</li>
+    <li>Calcul dynamique des marges de réussite, échecs et égalités à partir des jetés de dés.</li>
+    <li>Génération automatique et rendu HTML de rapports narratifs.</li>
+  </ul>
+  
+  <div class="badge-container">
+    <span class="custom-badge">TypeScript</span>
+    <span class="custom-badge">JavaScript</span>
+    <span class="custom-badge">Foundry VTT API</span>
+    <span class="custom-badge">HTML / CSS</span>
+    <span class="custom-badge">Développement collaboratif (Git)</span>
+    <span class="custom-badge">Développement assisté par IA (LLM)</span>
+  </div>
+</div>
+```
 
 ## Extrait de code
 
@@ -291,11 +307,3 @@ export class ConfrontationEngine {
 
 </details>
 
-## Mots-clés techniques
-
-TypeScript  
-JavaScript  
-Foundry VTT API  
-HTML / CSS  
-Développement collaboratif (Git)  
-Développement assisté par IA (LLM)
