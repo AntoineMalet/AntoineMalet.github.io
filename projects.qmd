@@ -64,7 +64,7 @@ title: "Projets"
 ```
 
 ---
-# Exemple de script Python:
+# Le jeu du Pendu 
 
 ```{=html}
 <div class="custom-card">
