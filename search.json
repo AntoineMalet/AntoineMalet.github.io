@@ -9,9 +9,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Antoine MALET - Bioinformaticien",
+    "title": "Antoine Malet",
     "section": "",
-    "text": "&lt;h1 style=\"margin: 0; font-size: 1.8em;\" class=\"profile-name\"&gt;Antoine Malet&lt;/h1&gt;\n&lt;div class=\"profile-subtitle\" style=\"font-size: 1.1em; color: #555;\"&gt;Ingénieur d'étude en bioinformatique&lt;/div&gt;\n\n\n\n\nProfil\n\nFormation :\n\n2020-2023 : Licence Sciences de la Vie et Humanités – Université Catholique de Lyon\n\n2023-2026 : Master BIMS – Université de Rouen Normandie\n\nExpériences : IE junior après 17 mois d’alternance à l’INRAE. Expérience en NGS et génomique, développement et maintenance de workflows d’analyse (Python, Snakemake) sous Linux.\nPublications : Concepteur du workflow GrAuFlow pour l’augmentation de graphes pangénome à partir de short-reads assemblés. Poster présenté lors de l’évènement JOBIM 2025. Disponible à l’URL : hal.inrae.fr/BIOGECO/hal-05209521v1.\n\n\n\n\nCompétences clés\n\nPangénomique & graphes\nSnakemake / Python\nConteneurisation (Apptainer)\nReproductibilité & Git\nSLURM & calcul distribué\nStatistiques & modélisation\n\n\n\n\nContact\n\n📧 antoinelm.malet@gmail.com\n\n📱 +33 7 69 85 61 40\n\n📍 Versailles, France\n\n📄 Télécharger le CV en PDF"
+    "text": "Antoine Malet\n    Ingénieur d'étude en bioinformatique\n  \n\n\n\nProfil\n\nFormation:\n2020-2023: Licence Science de la Vie et Humanités – Université Catholique de Lyon\n2023-2026: Master BIMS – Université de Rouen Normandie\nExpériences: IE junior après 17 mois d’alternance à l’INRAE. Expérience en NGS et génomique, développement et maintenance de workflows d’analyse (Python, Snakemake) sous Linux.\nPublications: Concepteur du workflow GrAuFlow pour l’augmentation de graphes pangénome à partir de short-reads assemblés. Poster présenté lors de l’évènement JOBIM 2025. Disponible à l’URL: https://hal.inrae.fr/BIOGECO/hal-05209521v1.\n\n\n\n\nCompétences clés\n\nPangénomique & graphes\nSnakemake / Python\nConteneurisation (Apptainer)\nReproductibilité & Git\nSLURM & calcul distribué\nStatistiques & modélisation\n\n\n\n\nContact\n\n📧 antoinelm.malet@gmail.com\n\n📱 +33 07 69 85 61 40\n\n📍 Versailles, France\n\n📄 Télécharger le CV en PDF"
   },
   {
     "objectID": "projects.html",
