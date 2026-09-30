@@ -46,7 +46,7 @@
 [📄 Télécharger le CV en PDF](Antoine_MALET_CV.pdf)
 
 ---
-### JOBIM 2026
+### JOBIM 2025
 
-![Flash talk et présentation d'un poster à JOBIM 2025](jobim2025.jpg){width=100% fig-align="center"}
+![Flash talk et présentation d'un poster à JOBIM 2025 sous la supervision de Nicolas LAPALU (IR INRAE)](jobim2025.jpg){width=100% fig-align="center"}
 
